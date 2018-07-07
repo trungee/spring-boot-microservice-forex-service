@@ -1,4 +1,4 @@
-package com.github.trungee.springbootmicroserviceforexservice.model;
+package com.github.trungee.springbootmicroserviceforexservice.domain;
 
 import java.math.BigDecimal;
 
@@ -6,7 +6,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
-@Entity
+@Entity(name="exchange_value")
 public class ExchangeValue {
 
 	@Id
@@ -16,6 +16,7 @@ public class ExchangeValue {
 	private String from;
 	@Column(name="currency_to")
 	private String to;
+	@Column(name="conversion_multiple")
 	private BigDecimal conversionMultiple;
 	private int port;
 	

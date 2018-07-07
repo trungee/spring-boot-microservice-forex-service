@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.github.trungee.springbootmicroserviceforexservice.model.ExchangeValue;
+import com.github.trungee.springbootmicroserviceforexservice.domain.ExchangeValue;
 import com.github.trungee.springbootmicroserviceforexservice.repository.ExchangeValueRepository;
 
 @RestController(value="rest")
